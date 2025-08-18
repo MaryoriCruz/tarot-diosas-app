@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "arcaneNumber": "0",
+    "arcaneName": "El Loco",
+    "arcaneDescription": "Representa nuevos comienzos, libertad y confianza en lo desconocido. Al derecho simboliza aventura y espontaneidad; invertido advierte imprudencia o falta de dirección.",
+    "arcaneImage": {
+      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_00_Fool.jpg",
+      "author": "Pamela Colman Smith, dominio público",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "goddessName": "Sally Ride",
+    "goddessDescription": "Astronauta y física, primera mujer estadounidense en viajar al espacio (1983).",
+    "goddessImage": {
+      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Sally_Ride_in_1984.jpg",
+      "author": "NASA",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+    }
+  },
+  {
+    "id": "2",
+    "arcaneNumber": "3",
+    "arcaneName": "La Emperatriz",
+    "arcaneDescription": "Simboliza fertilidad, abundancia y creatividad. En posición favorable representa el nacimiento de ideas y proyectos; invertida puede reflejar bloqueo creativo o dependencia.",
+    "arcaneImage": {
+      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/d/d2/RWS_Tarot_03_Empress.jpg",
+      "author": "Pamela Colman Smith, dominio público",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "goddessName": "Ada Lovelace",
+    "goddessDescription": "Matemática británica del siglo XIX, considerada la primera programadora.",
+    "goddessImage": {
+      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Ada_Lovelace_portrait.jpg",
+      "author": "Alfred Edward Chalon",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+    }
+  },
+  {
+    "id": "3",
+    "arcaneNumber": "1",
+    "arcaneName": "El Mago",
+    "arcaneDescription": "Simboliza poder personal, habilidad y la capacidad de transformar ideas en acción. Invertido puede señalar engaño o manipulación.",
+    "arcaneImage": {
+      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/9/90/RWS_Tarot_01_Magician.jpg",
+      "author": "Pamela Colman Smith, dominio público",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "goddessName": "Hedy Lamarr",
+    "goddessDescription": "Inventora y actriz. Sus aportes al espectro ensanchado sentaron las bases del WiFi y el Bluetooth.",
+    "goddessImage": {
+      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Hedy_Lamarr_in_The_Heavenly_Body_1944.jpg",
+      "author": "MGM",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+    }
+  },
+  {
+    "id": "4",
+    "arcaneNumber": "19",
+    "arcaneName": "El Sol",
+    "arcaneDescription": "Carta de claridad, alegría y éxito. Representa logros, vitalidad y el triunfo de la verdad sobre las sombras. Invertida, puede advertir ilusiones o exceso de optimismo.",
+    "arcaneImage": {
+      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/9/9b/RWS_Tarot_19_Sun.jpg",
+      "author": "Pamela Colman Smith, dominio público",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "goddessName": "Marie Curie",
+    "goddessDescription": "Física y química pionera en el estudio de la radiactividad. Primera persona en ganar dos premios Nobel.",
+    "goddessImage": {
+      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Marie_Curie_c1920.jpg",
+      "author": "Public Domain, Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+    }
+  },
+  {
+    "id": "5",
+    "arcaneNumber": "2",
+    "arcaneName": "La Sacerdotisa",
+    "arcaneDescription": "Representa la sabiduría, lo oculto y la intuición. Invertida puede significar secretos mal guardados o desconexión espiritual.",
+    "arcaneImage": {
+      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/8/88/RWS_Tarot_02_High_Priestess.jpg",
+      "author": "Pamela Colman Smith, dominio público",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "goddessName": "Hypatia de Alejandría",
+    "goddessDescription": "Filósofa, matemática y astrónoma del siglo IV. Una de las primeras grandes mujeres científicas registradas en la historia.",
+    "goddessImage": {
+      "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Hypatia_portrait.jpg",
+      "author": "Dominio público",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+    }
+  }
+]

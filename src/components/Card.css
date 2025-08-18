@@ -1,0 +1,159 @@
+/* src/pages/CardDetail.css */
+.card-detail {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #4a1a5c;
+  padding: 2rem;
+}
+
+/* Botón volver */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  background: #4a1a5c;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.back-button:hover {
+  background: #6a2a7c;
+  transform: translateX(-3px);
+}
+
+/* Container principal */
+.detail-container {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Sección del Arcano */
+.arcane-section {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  align-items: start;
+}
+
+.arcane-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.arcane-title {
+  font-size: 2.5rem;
+  color: #4a1a5c;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.arcane-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  text-align: justify;
+}
+
+/* Separador */
+.section-divider {
+  height: 3px;
+  background: linear-gradient(90deg, #4a1a5c, #7a4a92, #4a1a5c);
+  border-radius: 5px;
+  margin: 3rem 0;
+  opacity: 0.7;
+}
+
+/* Sección de la Diosa */
+.goddess-section {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.goddess-title {
+  font-size: 2rem;
+  color: #7a4a92;
+  margin-bottom: 1rem;
+}
+
+.goddess-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  text-align: justify;
+}
+
+.goddess-image {
+  text-align: center;
+}
+
+.goddess-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.image-credit {
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-detail {
+    padding: 1rem;
+  }
+  
+  .detail-container {
+    padding: 1.5rem;
+  }
+  
+  .arcane-section,
+  .goddess-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .arcane-title {
+    font-size: 2rem;
+  }
+  
+  .goddess-title {
+    font-size: 1.5rem;
+  }
+  
+  .arcane-image img,
+  .goddess-image img {
+    max-width: 250px;
+  }
+  
+  .arcane-description,
+  .goddess-description {
+    text-align: left;
+  }
+}

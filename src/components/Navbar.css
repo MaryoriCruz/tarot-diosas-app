@@ -2,7 +2,36 @@
     background-color: #0D0B1A;
     color: #FFD386;
     text-align: center;
-    padding: 30px;
-    margin-bottom: 40px;
+    padding: 25px;
     border-bottom: 3px solid #FFD386;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-inicio h1{
+    margin: 0;
+    color:#3D1454
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.button-inicio,
+.button-lectura {
+color: #d4af37;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid #d4af37;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
 }

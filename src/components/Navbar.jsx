@@ -6,13 +6,12 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="navbar-content">
-        <div className="logo">
+        <div className="texto-inicio">
           <h1>🔮 Diosas Contemporáneas</h1>
-          <p>Mujeres que revolucionan la ciencia y tecnología</p>
         </div>
         <nav className="nav">
-          <Link to="/" className="nav-link">🏠 Inicio</Link>
-          <Link to="/reading" className="nav-link">✨ Lectura de Cartas</Link>
+          <Link to="/" className="button-inicio">Inicio</Link>
+          <Link to="/reading" className="button-lectura">Lectura de Cartas</Link>
         </nav>
       </div>
     </header>

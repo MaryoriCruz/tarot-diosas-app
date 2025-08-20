@@ -22,7 +22,8 @@
   margin-bottom: 3rem;
 }
 
-.back-button {
+.back-button,
+.start-reading-btn {
   display: inline-flex;
   align-items: center;
   padding: 0.8rem 1.5rem;
@@ -37,7 +38,8 @@
   font-weight: 500;
 }
 
-.back-button:hover {
+.back-button:hover,
+.start-reading-btn:hover {
   background: linear-gradient(135deg, rgba(255, 215, 0, 0.3) 0%, rgba(139, 92, 246, 0.3) 100%);
   border-color: var(--golden-bright);
   transform: translateY(-2px);
@@ -124,21 +126,6 @@
   font-size: 0.95rem;
 }
 
-/* Botones específicos usando clases base */
-.start-reading-btn {
-  /* Hereda estilos base de button + mejoras */
-  padding: 1.2rem 3rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 1rem;
-}
-
-.new-reading-btn {
-  /* Hereda estilos base de button + mejoras */
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  margin-top: 1rem;
-}
 
 /* Shuffling Section */
 .shuffling-section {
@@ -304,8 +291,6 @@
 .reading-actions {
   margin-top: 3rem;
 }
-
-/* Eliminamos estilos duplicados - now usa estilos globales */
 
 /* Responsive */
 @media (max-width: 768px) {

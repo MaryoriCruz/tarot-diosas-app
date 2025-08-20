@@ -21,7 +21,7 @@ function CardDetail() {
   return (
     <div className="card-detail">
       {/* Botón volver */}
-      <Link to="/" className="back-button">
+      <Link to="/" className="btn back-button">
         ← Volver a las cartas
       </Link>
 

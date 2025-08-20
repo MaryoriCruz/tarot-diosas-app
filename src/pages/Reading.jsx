@@ -84,7 +84,7 @@ const Reading = () => {
               </div>
               
               <button 
-                className="start-reading-btn" 
+                className="btn start-reading-btn" 
                 onClick={startReading}
                 disabled={isReading}
               >
@@ -162,7 +162,7 @@ const Reading = () => {
             </div>
 
             <div className="reading-actions">
-              <button className="new-reading-btn" onClick={resetReading}>
+              <button className="btn new-reading-btn" onClick={resetReading}>
                 Nueva Lectura
               </button>
             </div>

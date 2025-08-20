@@ -158,7 +158,7 @@
   opacity: 0.9;
 }
 
-/* Responsive */
+/* Los botones en Home ahora usarán las clases globales automáticamente */
 @media (max-width: 768px) {
   .home {
     padding: 1rem;

@@ -3,28 +3,31 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  min-height: 100vh;
 }
 
 .home-title {
   text-align: center;
-  color: #4a1a5c;
+  color: var(--golden-bright);
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  text-shadow: 2px 2px 4px rgba(13, 11, 26, 0.8), 0 0 20px rgba(255, 215, 0, 0.3);
+  font-weight: bold;
 }
 
 .home-subtitle {
   text-align: center;
-  color: #666;
+  color: var(--lunar-cream);
   font-size: 1.1rem;
   margin-bottom: 3rem;
   font-style: italic;
+  opacity: 0.9;
 }
 
 .loading {
   text-align: center;
   font-size: 1.2rem;
-  color: #4a1a5c;
+  color: var(--golden-bright);
   padding: 2rem;
 }
 
@@ -44,25 +47,50 @@
 }
 
 .card-link:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 
 /* Carta individual */
 .card-preview {
-  background: white;
-  border-radius: 15px;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.1) 0%, 
+    rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 20px;
   padding: 1.5rem;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(13, 11, 26, 0.6);
   transition: all 0.3s ease;
   height: 100%;
   display: flex;
   flex-direction: column;
-  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
 }
 
 .card-preview:hover {
-  box-shadow: 0 8px 30px rgba(74, 26, 92, 0.2);
-  border-color: #4a1a5c;
+  border-color: var(--golden-bright);
+  box-shadow: 0 15px 40px rgba(13, 11, 26, 0.8), 0 0 20px rgba(255, 215, 0, 0.4);
+  transform: translateY(-3px);
+}
+
+/* Efecto de brillo en hover */
+.card-preview::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--golden-bright), var(--cosmic-purple), var(--golden-bright));
+  border-radius: 20px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.card-preview:hover::before {
+  opacity: 0.3;
 }
 
 /* Imagen de la carta */
@@ -70,6 +98,24 @@
   text-align: center;
   margin-bottom: 1rem;
   flex-shrink: 0;
+  position: relative;
+}
+
+.card-image::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-preview:hover .card-image::after {
+  opacity: 1;
 }
 
 .card-image img {
@@ -77,8 +123,14 @@
   height: auto;
   max-height: 200px;
   object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(13, 11, 26, 0.6);
+  transition: all 0.3s ease;
+}
+
+.card-preview:hover .card-image img {
+  box-shadow: 0 10px 30px rgba(13, 11, 26, 0.8), 0 0 15px rgba(255, 215, 0, 0.3);
+  transform: scale(1.05);
 }
 
 /* Información de la carta */
@@ -92,16 +144,18 @@
 
 .arcane-name {
   font-size: 1.3rem;
-  color: #4a1a5c;
+  color: var(--golden-bright);
   margin-bottom: 0.5rem;
   font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(13, 11, 26, 0.8);
 }
 
 .goddess-name {
-  color: #7a4a92;
+  color: var(--lunar-cream);
   font-size: 1rem;
   margin: 0;
   font-style: italic;
+  opacity: 0.9;
 }
 
 /* Responsive */

@@ -1,7 +1,6 @@
 /* src/pages/Reading.css */
 .reading-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 2rem;
 }
 
@@ -12,7 +11,7 @@
 
 .loading {
   text-align: center;
-  color: white;
+  color: var(--golden-bright);
   font-size: 1.2rem;
   padding: 2rem;
 }
@@ -27,34 +26,43 @@
   display: inline-flex;
   align-items: center;
   padding: 0.8rem 1.5rem;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  color: var(--golden-bright);
   text-decoration: none;
   border-radius: 25px;
   margin-bottom: 2rem;
   transition: all 0.3s ease;
   font-weight: 500;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .back-button:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.3) 0%, rgba(139, 92, 246, 0.3) 100%);
+  border-color: var(--golden-bright);
   transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(13, 11, 26, 0.4), 0 0 10px rgba(255, 215, 0, 0.3);
 }
 
 .reading-title {
   font-size: 3rem;
-  color: white;
+  color: var(--golden-bright);
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 4px rgba(13, 11, 26, 0.8), 0 0 20px rgba(255, 215, 0, 0.3);
   font-weight: bold;
+  animation: titleGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+  0% { text-shadow: 2px 2px 4px rgba(13, 11, 26, 0.8), 0 0 20px rgba(255, 215, 0, 0.3); }
+  100% { text-shadow: 2px 2px 4px rgba(13, 11, 26, 0.8), 0 0 30px rgba(255, 215, 0, 0.6); }
 }
 
 .reading-subtitle {
   font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--lunar-cream);
   font-style: italic;
+  opacity: 0.9;
 }
 
 /* Intro Section */
@@ -116,28 +124,20 @@
   font-size: 0.95rem;
 }
 
+/* Botones específicos usando clases base */
 .start-reading-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border: none;
-  padding: 1rem 3rem;
+  /* Hereda estilos base de button + mejoras */
+  padding: 1.2rem 3rem;
   font-size: 1.2rem;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
   font-weight: bold;
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  margin-top: 1rem;
 }
 
-.start-reading-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.6);
-}
-
-.start-reading-btn:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-  transform: none;
+.new-reading-btn {
+  /* Hereda estilos base de button + mejoras */
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  margin-top: 1rem;
 }
 
 /* Shuffling Section */
@@ -305,23 +305,7 @@
   margin-top: 3rem;
 }
 
-.new-reading-btn {
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: 2px solid white;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-}
-
-.new-reading-btn:hover {
-  background: white;
-  color: #4a1a5c;
-  transform: translateY(-2px);
-}
+/* Eliminamos estilos duplicados - now usa estilos globales */
 
 /* Responsive */
 @media (max-width: 768px) {

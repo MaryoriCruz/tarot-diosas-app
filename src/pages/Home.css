@@ -1,183 +1,114 @@
 /* src/pages/Home.css */
 .home {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
   min-height: 100vh;
-}
-
-.home-title {
-  text-align: center;
-  color: #ffed4a;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(13, 11, 26, 0.8);
-  animation: textGlow 3s ease-in-out infinite alternate;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px rgba(13, 11, 26, 0.8), 0 0 20px rgba(255, 215, 0, 0.3);
-  font-weight: bold;
-}
-
-.home-subtitle {
-  text-align: center;
-  color: var(--lunar-cream);
-  font-size: 1.1rem;
-  margin-bottom: 3rem;
-  font-style: italic;
-  opacity: 0.9;
-}
-
-.loading {
-  text-align: center;
-  font-size: 1.2rem;
-  color: var(--golden-bright);
-  padding: 2rem;
-}
-
-/* Grid de cartas */
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2rem;
-  padding: 1rem;
-}
-
-/* Enlace de carta */
-.card-link {
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-link:hover {
-  transform: translateY(-8px);
-}
-
-/* Carta individual */
-.card-preview {
-  background: linear-gradient(135deg, 
-    rgba(255, 255, 255, 0.1) 0%, 
-    rgba(255, 255, 255, 0.05) 100%);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 215, 0, 0.2);
-  border-radius: 20px;
-  padding: 1.5rem;
-  box-shadow: 0 10px 30px rgba(13, 11, 26, 0.6);
-  transition: all 0.3s ease;
-  height: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   overflow: hidden;
 }
 
-.card-preview:hover {
-  border-color: var(--golden-bright);
-  box-shadow: 0 15px 40px rgba(13, 11, 26, 0.8), 0 0 20px rgba(255, 215, 0, 0.4);
-  transform: translateY(-3px);
-}
-
-/* Efecto de brillo en hover */
-.card-preview::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, var(--golden-bright), var(--cosmic-purple), var(--golden-bright));
-  border-radius: 20px;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 0.3s ease;
-}
-
-.card-preview:hover::before {
-  opacity: 0.3;
-}
-
-/* Imagen de la carta */
-.card-image {
-  text-align: center;
-  margin-bottom: 1rem;
-  flex-shrink: 0;
+.hero-section {
   position: relative;
-}
-
-.card-image::after {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
-  border-radius: 15px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.card-preview:hover .card-image::after {
-  opacity: 1;
-}
-
-.card-image img {
-  width: 120px;
-  height: auto;
-  max-height: 200px;
-  object-fit: contain;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(13, 11, 26, 0.6);
-  transition: all 0.3s ease;
-}
-
-.card-preview:hover .card-image img {
-  box-shadow: 0 10px 30px rgba(13, 11, 26, 0.8), 0 0 15px rgba(255, 215, 0, 0.3);
-  transform: scale(1.05);
-}
-
-/* Información de la carta */
-.card-info {
-  text-align: center;
-  flex-grow: 1;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 0 1rem;
+}
+
+.mystic-symbol {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: floatSymbol 3s ease-in-out infinite;
+  text-shadow: var(--glow-gold);
+}
+
+@keyframes floatSymbol {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--golden-amber);
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: var(--shadow-deep);
+}
+
+.hero-title span {
+  color: var(--golden-bright);
+  text-shadow: var(--glow-gold);
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--lunar-cream);
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.arcane-name {
-  font-size: 1.3rem;
+/* Botones aprovechando .btn global */
+.btn-primary {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(139, 92, 246, 0.2));
+  border: 1px solid var(--golden-bright);
   color: var(--golden-bright);
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(13, 11, 26, 0.8);
+  font-weight: 600;
 }
 
-.goddess-name {
-  color: var(--lunar-cream);
-  font-size: 1rem;
-  margin: 0;
-  font-style: italic;
-  opacity: 0.9;
+.btn-primary:hover {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(139, 92, 246, 0.3));
+  box-shadow: var(--glow-gold), var(--glow-violet);
+  transform: translateY(-3px);
 }
 
-/* Los botones en Home ahora usarán las clases globales automáticamente */
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--golden-amber);
+  color: var(--golden-amber);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 215, 0, 0.1);
+  box-shadow: var(--glow-gold);
+  transform: translateY(-3px);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .home {
-    padding: 1rem;
-  }
-  
-  .home-title {
-    font-size: 2rem;
-  }
-  
-  .cards-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .card-image img {
-    width: 100px;
-    max-height: 170px;
-  }
+  .hero-title { font-size: 2rem; }
+  .hero-subtitle { font-size: 1rem; }
+  .hero-text { font-size: 1rem; }
+  .mystic-symbol { font-size: 3rem; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 1.6rem; }
+  .hero-buttons { flex-direction: column; gap: 0.75rem; }
+  .btn { width: 100%; text-align: center; }
 }

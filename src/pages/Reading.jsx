@@ -60,7 +60,7 @@ const Reading = () => {
         {currentStep === 0 && (
           <div className="reading-intro">
             <div className="intro-content">
-              <h2>Prepárate para tu Lectura</h2>
+              <h2>Prepárate para tu lectura</h2>
               <p>
                 “Tira tus cartas, descubre tu futuro y conecta con la fuerza de mujeres que revolucionaron la ciencia. Los arcanos tienen un mensaje para ti.”
               </p>

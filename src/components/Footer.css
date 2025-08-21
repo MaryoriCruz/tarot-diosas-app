@@ -2,7 +2,11 @@
     color: #FFD386;
     text-align: center;
     background-color:#0D0B1A;
-    padding: 20px;
-    border-top: 3px solid #FFD386;
+    padding: 25px;
+    border-top: 1px solid var(--golden-bright);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2),
+    0 0 30px rgba(255, 215, 0, 0.15);
 }
 

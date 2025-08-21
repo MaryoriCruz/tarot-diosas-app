@@ -50,9 +50,6 @@ const Reading = () => {
         
         {/* Header */}
         <div className="reading-header">
-          <Link to="/" className="back-button">
-            ← Volver a las cartas
-          </Link>
           <h1 className="reading-title">🔮 Lectura de 3 Cartas</h1>
           <p className="reading-subtitle">
             Descubre la sabiduría del pasado, presente y futuro
@@ -83,14 +80,20 @@ const Reading = () => {
                 </div>
               </div>
               
-              <button 
-                className="btn start-reading-btn" 
+              <div className="reading-actions">
+                <button 
+                className="btn" 
                 onClick={startReading}
                 disabled={isReading}
-              >
-                ✨ Comenzar Lectura
-              </button>
+                >
+                Comenzar Lectura
+                </button>
+                <Link to="/" className="btn">
+              ← Volver a las cartas
+              </Link>
+              </div>
             </div>
+
           </div>
         )}
 
@@ -110,7 +113,7 @@ const Reading = () => {
         {/* Paso 2: Resultado */}
         {currentStep === 2 && selectedCards.length === 3 && (
           <div className="reading-result">
-            <h2>✨ Tu Lectura Está Lista</h2>
+            <h2>✨ Tu lectura está lista</h2>
             
             <div className="cards-spread">
               {selectedCards.map((card, index) => (
@@ -160,7 +163,6 @@ const Reading = () => {
                 </div>
               ))}
             </div>
-
             <div className="reading-actions">
               <button className="btn new-reading-btn" onClick={resetReading}>
                 Nueva Lectura

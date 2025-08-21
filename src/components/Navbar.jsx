@@ -10,8 +10,8 @@ const Navbar = () => {
           <h1>🔮 Diosas Contemporáneas</h1>
         </div>
         <nav className="nav">
-          <Link to="/" className="btn button-inicio">Inicio</Link>
-          <Link to="/reading" className="btn button-lectura">Lectura de Cartas</Link>
+          <Link to="/" className="btn">Inicio</Link>
+          <Link to="/reading" className="btn">Lectura de Cartas</Link>
         </nav>
       </div>
     </header>

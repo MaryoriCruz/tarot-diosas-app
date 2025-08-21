@@ -78,42 +78,31 @@ body::before {
   transform: translateY(-2px);
 }
 
-/* Estilo base para enlaces */
-a {
-  color: var(--golden-bright);
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-a:hover {
-  color: var(--golden-warm);
-  text-shadow: var(--glow-gold);
-}
-
 /* Botones base */
-button {
-  font-family: inherit;
-  cursor: pointer;
-  border: none;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.8rem;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  color: var(--golden-bright);
+  font-size: 13px;
+  text-decoration: none;
   border-radius: 25px;
-  padding: 0.8rem 1.5rem;
-  font-weight: 600;
+  margin-bottom: 2rem;
   transition: all 0.3s ease;
-  background: linear-gradient(135deg, var(--golden-amber) 0%, var(--golden-bright) 100%);
-  color: var(--midnight-blue);
-  box-shadow: var(--shadow-deep);
+  font-weight: 500;
+  height: 3px;
 }
 
-button:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-deep), var(--glow-gold);
+.btn:hover {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.3) 0%, rgba(139, 92, 246, 0.3) 100%);
+  border-color: var(--golden-bright);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(13, 11, 26, 0.4), 0 0 10px rgba(255, 215, 0, 0.3);
 }
 
-button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-}
 
 /* Headers globales */
 h1, h2, h3, h4, h5, h6 {

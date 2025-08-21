@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <h1 className="home-title">Cartas del Tarot - Diosas Contemporáneas</h1>
+      <h1 className="home-title">Cartas del Tarot</h1>
       <p className="home-subtitle">Descubre la sabiduría de las mujeres que revolucionaron la ciencia y tecnología</p>
       
       <div className="cards-grid">

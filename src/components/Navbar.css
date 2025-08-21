@@ -1,12 +1,15 @@
-.navbar{
-    background-color: #0D0B1A;
-    color: #FFD386;
-    text-align: center;
-    padding: 25px;
-    border-bottom: 3px solid #FFD386;
-    position: relative;
-    z-index: 1;
+.navbar {
+  background-color: var(--midnight-blue);
+  color: var(--golden-bright);
+  text-align: center;
+  padding: 25px;
+  border-bottom: 1px solid var(--golden-bright);
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2),
+              0 0 30px rgba(255, 215, 0, 0.15);
 }
+
 
 .navbar-content{
     display: flex;
@@ -16,7 +19,10 @@
 
 .texto-inicio h1{
     margin: 0;
-    color:#3D1454
+    color: #ffed4a;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(13, 11, 26, 0.8);
+  animation: textGlow 3s ease-in-out infinite alternate;
 }
 
 .nav {

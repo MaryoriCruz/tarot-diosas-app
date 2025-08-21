@@ -111,12 +111,8 @@
 
 .arcane-title {
   font-size: 2.8rem;
-  background: linear-gradient(135deg, var(--golden-bright) 0%, var(--golden-warm) 50%, var(--golden-bright) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #ffed4a;
   margin-bottom: 1rem;
-  font-weight: bold;
   text-shadow: 2px 2px 4px rgba(13, 11, 26, 0.8);
   animation: textGlow 3s ease-in-out infinite alternate;
 }
@@ -177,10 +173,7 @@
 
 .goddess-title {
   font-size: 2.2rem;
-  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color:#764ba2;
   margin-bottom: 1rem;
   font-weight: bold;
 }

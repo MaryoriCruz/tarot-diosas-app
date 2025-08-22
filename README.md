@@ -1,12 +1,39 @@
-# React + Vite
+🔮 🔮 Tarot • Ciencia • Misterio  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Explora los arcanos del tarot con un diseño envolvente, efectos de brillo y partículas animadas. Conecta la simbología de cada carta con diosas o científicas contemporáneas.
 
-Currently, two official plugins are available:
+✨ Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Hero Section interactiva con símbolos místicos y botones glow.
 
-## Expanding the ESLint configuration
+Detalle de cartas con arcano y diosa/contemporánea asociada.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Animaciones suaves: fade-in, slide-up y wave effect.
+
+Fondo con partículas doradas y diseño responsive.
+
+Loading spinner elegante con la paleta mágica.
+
+🛠 Tecnologías
+
+React + React Router
+
+CSS moderno (variables, gradientes, blur, animaciones)
+
+JavaScript ES6+
+
+📂 Estructura
+src/
+├─ index.css
+├─ pages/
+│  ├─ Home.jsx / Home.css
+│  ├─ CardDetail.jsx / CardDetail.css
+├─ components/
+├─ services/services.js
+├─ App.jsx
+└─ index.js
+
+🎨 Paleta de colores
+--midnight-blue, --deep-blue, --ocean-blue, --mystic-blue
+--golden-bright, --golden-warm, --golden-amber
+--lunar-cream, --pearl-white, --mystic-violet, --cosmic-purple
